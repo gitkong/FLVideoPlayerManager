@@ -1,5 +1,5 @@
 # 基于阿里云播放SDK封装的工具类
-- 内含[自定义滑条]()，可监听开始滑动、正在滑动、结束滑动三个状态；工具类中的播放器SDK可随时替换
+- 内含[自定义滑条](https://github.com/gitkong/FLSlider)，可监听开始滑动、正在滑动、结束滑动三个状态；工具类中的播放器SDK可随时替换
 
 # 先看看效果图
 ![效果图](http://upload-images.jianshu.io/upload_images/1085031-1672aa5a25f5d43b.gif?imageMogr2/auto-orient/strip)
@@ -182,4 +182,6 @@
 ```
 
 # 内置自定义slider
-- 为什么要自定义slider？[点我前往]()
+- 为什么要自定义slider？[点我前往](https://github.com/gitkong/FLSlider)
+
+# 喜欢给我个Star，欢迎关注[我的简书](http://www.jianshu.com/users/fe5700cfb223/latest_articles)，更多原创干货等着你
