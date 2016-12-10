@@ -46,9 +46,8 @@ static CGFloat fl_slider_hegiht = 3.0f;
     CGPoint _lastPoint;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
+- (instancetype)init{
+    self = [super init];
     if (self) {
         [self initSubviews];
     }
@@ -138,6 +137,7 @@ static CGFloat fl_slider_hegiht = 3.0f;
 
 - (void)setValue:(float)value animated:(BOOL)animated{
     _value = value;
+    [self layoutSubviews];
     CGFloat finishValue = self.maximumTrackView.frame.size.width * value;
     CGPoint tempPoint = self.sliderButton.center;
     tempPoint.x =  self.maximumTrackView.frame.origin.x + finishValue;
@@ -184,6 +184,7 @@ static CGFloat fl_slider_hegiht = 3.0f;
 
 - (void)setCacheValue:(float)cacheValue{
     _cacheValue = cacheValue;
+    [self layoutSubviews];
     self.cacheTrackViewWidth = self.maximumTrackView.frame.size.width * cacheValue;
     [self layoutSubviews];
 }

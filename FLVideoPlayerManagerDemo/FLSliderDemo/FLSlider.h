@@ -10,7 +10,7 @@
  */
 
 #import <UIKit/UIKit.h>
-@class FLSlider;
+@class FLSlider,FLSliderButton;
 @protocol FLSliderDelegate <NSObject>
 @optional
 /**
@@ -18,24 +18,28 @@
  *
  *  开始拖动
  */
-- (void)beginSlide:(UIButton *)sliderBtn slider:(FLSlider *)slider;
+- (void)beginSlide:(FLSliderButton *)sliderBtn slider:(FLSlider *)slider;
 /**
  *  @author gitKong
  *
  *  正在拖动
  */
-- (void)sliding:(UIButton *)sliderBtn slider:(FLSlider *)slider;
+- (void)sliding:(FLSliderButton *)sliderBtn slider:(FLSlider *)slider;
 /**
  *  @author gitKong
  *
  *  结束拖动
  */
-- (void)endSlide:(UIButton *)sliderBtn slider:(FLSlider *)slider;
+- (void)endSlide:(FLSliderButton *)sliderBtn slider:(FLSlider *)slider;
 
 @end
 
 @interface FLSlider : UIControl
-
+/**
+ *  @author gitKong
+ *
+ *  代理
+ */
 @property (nonatomic,weak)id<FLSliderDelegate> delegate;
 /**
  *  @author gitKong
